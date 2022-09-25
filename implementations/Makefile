@@ -16,10 +16,12 @@ LDFLAGS = -g
 #
 TARGET = main
 OBJ_FILES = ${TARGET}.o \
-			linked_list.o
+			linked_list.o \
+			binary_tree.o
 INC_FILES = ${TARGET}.h \
 			node.h \
-			linked_list.h
+			linked_list.h \
+			binary_tree.h
 
 
 ${TARGET}: ${OBJ_FILES}
