@@ -1,18 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct node_t
-{
-    int value;
-    struct node_t* next;
-} node;
-
-typedef struct linked_list_t
-{
-    struct node_t* head;
-    struct node_t* tail;
-    int size;
-} linked_list;
+#include "linked_list.h"
 
 /* Given a value, search for the corresponding node in the linked list
  * */
@@ -116,6 +102,8 @@ void deleteNode(linked_list* llist, int val)
 
 }
 
+/* Print the linked list starting from the head 
+ * */
 void printList(linked_list* llist)
 {
     node* currentNode = llist->head;
@@ -126,20 +114,4 @@ void printList(linked_list* llist)
         currentNode = currentNode->next;
     }
     printf("\n");
-}
-
-int main()
-{
-    linked_list *llist;
-    llist = (linked_list*) malloc(sizeof(linked_list));
-
-    for (int i = 1; i <= 20; i++)
-    {
-        insertNode(llist, i);
-    }
-    for (int i = 20; i >= 1; i--)
-    {
-        printList(llist);
-        deleteNode(llist, i);
-    }
 }
