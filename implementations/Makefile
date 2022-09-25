@@ -15,16 +15,10 @@ LDFLAGS = -g
 # You should be able to add object files here without changing anything else
 #
 TARGET = main
-<<<<<<< HEAD
-OBJ_FILES = ${TARGET}.o   \
-			linked_list.o
-INC_FILES = ${TARGET}.h   \
-			node.h        \
-=======
 OBJ_FILES = ${TARGET}.o \
 			linked_list.o
 INC_FILES = ${TARGET}.h \
->>>>>>> a5879b776d9c5535d578e729112b89fc848f7117
+			node.h \
 			linked_list.h
 
 
