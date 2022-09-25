@@ -18,11 +18,9 @@ node* searchNode(linked_list* llist, int val);
 /* Create a new node with the value passed in the parameter 
  * */
 void insertNode(linked_list* llist, int val);
-
 /* Find the first node with the given value and delete it from the list 
  * */
 void deleteNode(linked_list* llist, int val);
-
 /* Print the linked list starting from the head 
  * */
 void printList(linked_list* llist);
