@@ -14,15 +14,15 @@ typedef struct linked_list_t
 
 /* Given a value, search for the corresponding node in the linked list
  * */
-node* searchNode(linked_list* llist, int val);
+node* search_node_llist(linked_list* llist, int val);
 /* Create a new node with the value passed in the parameter 
  * */
-void insertNode(linked_list* llist, int val);
+void insert_node_llist(linked_list* llist, int val);
 /* Find the first node with the given value and delete it from the list 
  * */
-void deleteNode(linked_list* llist, int val);
+void delete_node_llist(linked_list* llist, int val);
 /* Print the linked list starting from the head 
  * */
-void printList(linked_list* llist);
+void print_llist(linked_list* llist);
 
 #endif

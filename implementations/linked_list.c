@@ -2,7 +2,7 @@
 
 /* Given a value, search for the corresponding node in the linked list
  * */
-node* searchNode(linked_list* llist, int val)
+node* search_node_llist(linked_list* llist, int val)
 {
     node* currentNode = llist->head;
     node* target;
@@ -20,7 +20,7 @@ node* searchNode(linked_list* llist, int val)
 
 /* Create a new node with the value passed in the parameter 
  * */
-void insertNode(linked_list* llist, int val)
+void insert_node_llist(linked_list* llist, int val)
 {
     llist->size++;
     node *newNode;
@@ -51,7 +51,7 @@ void insertNode(linked_list* llist, int val)
 
 /* Find the first node with the given value and delete it from the list 
  * */
-void deleteNode(linked_list* llist, int val)
+void delete_node_llist(linked_list* llist, int val)
 {
     /* If the value is the head node, then delete the head node 
      * and reset the head
@@ -104,7 +104,7 @@ void deleteNode(linked_list* llist, int val)
 
 /* Print the linked list starting from the head 
  * */
-void printList(linked_list* llist)
+void print_llist(linked_list* llist)
 {
     node* currentNode = llist->head;
     /* Print each node in the linked list, starting at the head of the list 
